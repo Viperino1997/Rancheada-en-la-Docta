@@ -2,6 +2,7 @@ import json
 import streamlit as st
 import random
 import streamlit.components.v1 as components
+import base64
 
 # --- DATOS ---
 ONDAS_INFO = {
@@ -22,10 +23,18 @@ def banda_activa():
 # --- ESTILOS ---
 def aplicar_estilos(fase):
     if fase == "inicio":
-        st.markdown("""
+        try:
+            with open("C_map.png", "rb") as f:
+                img_data = f.read()
+            b64_img = base64.b64encode(img_data).decode()
+            bg_url = f"data:image/png;base64,{b64_img}"
+        except Exception:
+            bg_url = "https://github.com/Viperino1997/Rancheada-en-la-Docta/blob/main/C_map.png?raw=true"
+            
+        css = """
             <style>
             .stApp {
-                background-image: url("https://github.com/Viperino1997/Rancheada-en-la-Docta/blob/main/C_map.png?raw=true");
+                background-image: url("BG_URL_PLACEHOLDER");
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -34,7 +43,8 @@ def aplicar_estilos(fase):
             h1, p, label { color: white !important; text-shadow: 2px 2px 4px #000000; }
             .stForm { background-color: rgba(0, 0, 0, 0.7); padding: 20px; border-radius: 10px; }
             </style>
-        """, unsafe_allow_html=True)
+        """.replace("BG_URL_PLACEHOLDER", bg_url)
+        st.markdown(css, unsafe_allow_html=True)
     else:
         st.markdown("""
             <style>
@@ -156,15 +166,18 @@ def mostrar_inicio():
     st.title("🏙️ RANCHADA EN CÓRDOBA")
     st.write("Armá tu banda para salir a dar una vuelta.")
 
-    with st.form("registro_vago"):
-        nombre = st.text_input("Apodo:")
-        onda = st.selectbox("Elegí tu onda:", list(ONDAS_INFO.keys()))
-        st.info(f"**Habilidad Especial:** {ONDAS_INFO[onda]['desc']}")
-        sumar = st.form_submit_button("Sumar a la banda")
+    nombre = st.text_input("Apodo:")
+    onda = st.selectbox("Elegí tu onda:", list(ONDAS_INFO.keys()))
+    st.info(f"**Habilidad Especial:** {ONDAS_INFO[onda]['desc']}")
+    sumar = st.button("Sumar a la banda")
 
-        if sumar and nombre:
+    if sumar:
+        if nombre:
             st.session_state.la_banda.append({"nombre": nombre, "onda": onda, "vida": 100})
             st.toast(f"{nombre} está listo.")
+            st.rerun()
+        else:
+            st.warning("¡Tenés que ingresar un apodo!")
 
     if st.session_state.la_banda:
         st.subheader("La Banda Actual:")
@@ -256,8 +269,25 @@ def mostrar_calle():
                             "nombre_vago": vago["nombre"],
                             "texto": f"Tirada: {tirada} + Bono: {valor_bono} = {total}. " + (opt["ok"] if exito else opt["fail"])
                         }
+                        
+                        import re
                         if not exito:
-                            vago["vida"] = max(0, vago["vida"] - 20)
+                            # Extraer daño del texto, ej: "(-60 Vida)" o "-20 Vida"
+                            match_fail = re.search(r'-\s*(\d+)\s*Vida', opt["fail"], re.IGNORECASE)
+                            dmg = int(match_fail.group(1)) if match_fail else 0
+                            
+                            # Si no se especificó daño pero antes restaba 20, 
+                            # lo dejamos en 0 para que coincida exactamente con los textos.
+                            # Algunos eventos como "Te dijo que no hay fiado" restarán 0.
+                            if dmg > 0:
+                                vago["vida"] = max(0, vago["vida"] - dmg)
+                        else:
+                            # Extraer cura del texto si la hay, ej: "(+10 Vida)"
+                            match_ok = re.search(r'\+\s*(\d+)\s*Vida', opt["ok"], re.IGNORECASE)
+                            heal = int(match_ok.group(1)) if match_ok else 0
+                            if heal > 0:
+                                vago["vida"] = min(100, vago["vida"] + heal)
+
                         st.rerun()
 
             # PASO 3 — Mostrar resultado

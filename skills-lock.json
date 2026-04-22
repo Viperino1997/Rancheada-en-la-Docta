@@ -20,6 +20,21 @@
       "source": "sickn33/antigravity-awesome-skills",
       "sourceType": "github",
       "computedHash": "bb3f72187c172a39c64e74bee56d08df99029e5d45c16828b433eb0a2b28b663"
+    },
+    "pytest-coverage": {
+      "source": "github/awesome-copilot",
+      "sourceType": "github",
+      "computedHash": "06481f4bbc6d80a52091ec9ba5856eb1dc5f80cbabb40fd4ad02aaea3085a0dc"
+    },
+    "python-performance-optimization": {
+      "source": "wshobson/agents",
+      "sourceType": "github",
+      "computedHash": "1a7009e7e16fd08c201f4a527a44d4f0d9d1d892b15b92ab3492624b23be22b8"
+    },
+    "python-testing": {
+      "source": "affaan-m/everything-claude-code",
+      "sourceType": "github",
+      "computedHash": "c3b4ee30765eae26190412c1d0c81e078680511094eabf42c043e4e5a1c12d9c"
     }
   }
 }
