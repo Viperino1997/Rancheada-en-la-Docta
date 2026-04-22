@@ -2,7 +2,7 @@
   {
     "id": "fisura",
     "titulo": "📍 Una esquina cualquiera",
-    "imagen": "https://raw.githubusercontent.com/Viperino1997/Rancheada-en-Cba/main/imagenes/fisura.jpg",
+    "imagen": "https://raw.githubusercontent.com/Viperino1997/Rancheada-en-la-Docta/main/imagenes/fisura.jpg",
     "relato": "Están ahí tranca, cuando se acerca un loco con la mirada perdida: 'Eee ameo, ¿no tenés una seca de ese que están fumando?'",
     "opciones": [
       {
@@ -24,7 +24,7 @@
   {
     "id": "panther",
     "titulo": "📍 Baños de Panther (La Cañada)",
-    "imagen": "https://raw.githubusercontent.com/Viperino1997/Rancheada-en-Cba/main/imagenes/panther.jpg",
+    "imagen": "https://raw.githubusercontent.com/Viperino1997/Rancheada-en-la-Docta/main/imagenes/panther.jpg",
     "relato": "Están en Panther y una mina se olvida una bolsita en el baño. Ustedes la tienen. A los 15 minutos vuelve con dos monos de 3 metros a apurar al encargado.",
     "opciones": [
       {
@@ -53,7 +53,7 @@
   {
     "id": "jardin_florido",
     "titulo": "📍 Peatonal 9 de Julio",
-    "imagen": "https://raw.githubusercontent.com/Viperino1997/Rancheada-en-Cba/main/imagenes/jardin_florido.jpg",
+    "imagen": "https://raw.githubusercontent.com/Viperino1997/Rancheada-en-la-Docta/main/imagenes/jardin_florido.jpg",
     "relato": "Caminan por la 9 de Julio y el aire se pone helado de golpe. Bajo un farol, ven a un señor impecable con smokin, galera y un clavel en el ojal.",
     "opciones": [
       {
@@ -75,7 +75,7 @@
   {
     "id": "chori_sarmiento",
     "titulo": "🌭 El Carrito del 'Dante'",
-    "imagen": "https://raw.githubusercontent.com/Viperino1997/Rancheada-en-Cba/main/imagenes/chori_sarmiento.jpg",
+    "imagen": "https://raw.githubusercontent.com/Viperino1997/Rancheada-en-la-Docta/main/imagenes/chori_sarmiento.jpg",
     "relato": "El hambre te está matando y el olor a chimichurri del Parque Sarmiento te hipnotiza.",
     "opciones": [
       {
@@ -97,7 +97,7 @@
   {
     "id": "control_costanera",
     "titulo": "👮 Control en el Puente Avellaneda",
-    "imagen": "https://raw.githubusercontent.com/Viperino1997/Rancheada-en-Cba/main/imagenes/control_costanera.jpg",
+    "imagen": "https://raw.githubusercontent.com/Viperino1997/Rancheada-en-la-Docta/main/imagenes/control_costanera.jpg",
     "relato": "Te Dispones con la ranchada a cruzar el puente avellanada para ir al point previsto para esta noche, ya estando a mitad de camino te sentis observado por los canas del control",
     "opciones": [
       {
@@ -119,7 +119,7 @@
   {
     "id": "compe_sobremonte",
     "titulo": "🎤 Plaza Sobremonte — La Compe",
-    "imagen": "https://raw.githubusercontent.com/Viperino1997/Rancheada-en-Cba/main/imagenes/compe_sobremonte.jpg",
+    "imagen": "https://raw.githubusercontent.com/Viperino1997/Rancheada-en-la-Docta/main/imagenes/compe_sobremonte.jpg",
     "relato": "Estás metido en el círculo, el beat te tiene en trance y el MC de turno está destruyendo el micrófono. De repente sentís el bolsillo más liviano. Girás y ves una sombra fundiéndose entre la gente. Te robaron el celu.",
     "opciones": [
       {
@@ -141,7 +141,7 @@
   {
     "id": "hoseador_cannabis",
     "titulo": "🌿 El Hoseador de la Vuelta",
-    "imagen": "https://raw.githubusercontent.com/Viperino1997/Rancheada-en-Cba/main/imagenes/hoseador_cannabis.jpg",
+    "imagen": "https://raw.githubusercontent.com/Viperino1997/Rancheada-en-la-Docta/main/imagenes/hoseador_cannabis.jpg",
     "relato": "El olor te llega antes de verlo. Ahí está, en una esquina tranquila, con una bolsita que promete flores de primera. Le preguntás el precio y te dice una cifra que te hace doler el alma. Esto necesita negociación.",
     "opciones": [
       {
