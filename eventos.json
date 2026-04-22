@@ -10,14 +10,14 @@
         "stat": "Carisma",
         "diff": 12,
         "ok": "El loco se pone re piola: 'Sos un masa'. Te cuenta que la cana está a la vuelta. (+2 Calle)",
-        "fail": "Se te fuma medio faso y se pone denso. (-20 Vida)"
+        "fail": "Se te fuma medio faso y se pone denso. (-10 Vida)"
       },
       {
         "texto": "Decirle que es el último",
         "stat": "Calle",
         "diff": 15,
         "ok": "El vago asiente: 'Todo bien, se entiende'.",
-        "fail": "Se ofende: '¡Eee gato careta!'. Les tira la mala vibra. (-20 Vida)"
+        "fail": "Se ofende: '¡Eee gato careta!'. Les tira la mala vibra. (-5 Vida)"
       }
     ]
   },
@@ -31,22 +31,22 @@
         "texto": "No hacer nada",
         "stat": "Calle",
         "diff": 14,
-        "ok": "Zafaron. Los monos le pegan al del bar pero a ustedes ni los ven.",
+        "ok": "Zafaron. Los monos le pegan al del bar pero a ustedes ni los ven. [piedrita] Encontraste una piedrita blanca en el bolsillo.",
         "fail": "Uno de los monos te ve cara conocida. '¿Qué mirás vos?'. (-20 Vida)"
-      },
-      {
-        "texto": "Devolver la bolsa",
-        "stat": "Carisma",
-        "diff": 16,
-        "ok": "Les explicás con la mejor. Los tipos se calman. (+10 Respeto)",
-        "fail": "Se piensan que los estás verdugueando. Cobrás de lo lindo. (-20 Vida)"
       },
       {
         "texto": "Grabar la paliza",
         "stat": "Calle",
         "diff": 18,
-        "ok": "Video viral. Sos crack en el grupo de WhatsApp. (+5 Calle)",
-        "fail": "Te ven el flash. Te rompen el celu y la cara. (-20 Vida)"
+        "ok": "Filmaste todo sin que te vieran. Subiste el viral y te quedaste con una [piedrita] que se te cayó del bolsillo. (+5 Calle)",
+        "fail": "Te ven el flash. Te rompen el celu y la cara. (-60 Vida)"
+      },
+      {
+        "texto": "Devolver la bolsa",
+        "stat": "Carisma",
+        "diff": 16,
+        "ok": "Les explicás con la mejor. Los tipos se calman y te agradecer con un gesto. (+10 Respeto)",
+        "fail": "Se piensan que los estás verdugueando. Cobrás de lo lindo. (-40 Vida)"
       }
     ]
   },
@@ -61,14 +61,14 @@
         "stat": "Carisma",
         "diff": 14,
         "ok": "Le respondés con altura. El viejo sonríe y se desvanece. (+10 Respeto)",
-        "fail": "Te trabás al hablar. El señor te mira con lástima. (-20 Vida)"
+        "fail": "Te trabás al hablar. El señor te mira con lástima. (-15 Vida)"
       },
       {
         "texto": "Notar que no tiene sombra",
         "stat": "Calle",
         "diff": 12,
         "ok": "Cruzas de calle rápido y sentís un susurro: 'Adiós, pichones'.",
-        "fail": "Te quedás embobado y un viento helado te deja tiritando. (-20 Vida)"
+        "fail": "Te quedás embobado y un viento helado te deja tiritando. (-10 Vida)"
       }
     ]
   },
@@ -83,7 +83,7 @@
         "stat": "Calle",
         "diff": 13,
         "ok": "Tenés estómago de acero. (+10 Vida)",
-        "fail": "El ají estaba criminal. (-20 Vida)"
+        "fail": "El ají estaba criminal. (-15 Vida)"
       },
       {
         "texto": "Pedir promo",
@@ -111,8 +111,8 @@
         "texto": "Saludarlos con un buenas noches",
         "stat": "Carisma",
         "diff": 12,
-        "ok": "Te saludan de vuelta y pasan sin problema.",
-        "fail": "Se te cagan de risa en la cara y te sentis verdugeado por los compas. (-20 Vida)"
+        "ok": "Te saludan de vuelta y pasan sin problema. [gorra] Te Dejan una gorra de la fuerza.",
+        "fail": "Se te cagan de risa en la cara y te sentis verdugeado por los compas. (-10 Vida)"
       }
     ]
   },
@@ -126,15 +126,15 @@
         "texto": "Salir a correr a la rata",
         "stat": "Agilidad",
         "diff": 14,
-        "ok": "Arrancás como bala, lo esquivás entre la gente y lo agarrás del buzo antes de que doble en Caseros. Te devuelve el celu sin chistar. (+15 Respeto)",
-        "fail": "Lo perdés entre la multitud a los tres metros. El tipo conoce cada recoveco de la plaza. (-20 Vida)"
+        "ok": "Arrancás como bala, lo esquivás entre la gente y lo agarrás del buzo antes de que doble en Caseros. [celu] Te devuelve el celu sin chistar. (+15 Respeto)",
+        "fail": "Lo perdés entre la multitud a los tres metros. El tipo conoce cada recoveco de la plaza. (-10 Vida)"
       },
       {
         "texto": "Avisar al organizador para correr la voz",
         "stat": "Agilidad",
         "diff": 11,
         "ok": "El organizador para el beat, se corre la voz en segundos. La gente cierra el círculo y la rata aparece acorralado. El celu vuelve a tu mano entre aplausos. (+10 Respeto)",
-        "fail": "Para cuando el organizador entiende lo que pasó, el tipo ya se evaporó. La plaza sigue como si nada. (-20 Vida)"
+        "fail": "Para cuando el organizador entiende lo que pasó, el tipo ya se evaporó. La plaza sigue como si nada. (-10 Vida)"
       }
     ]
   },
@@ -148,22 +148,22 @@
         "texto": "Regatear: 'vi el mismo precio más barato a dos cuadras'",
         "stat": "Chamullo",
         "diff": 13,
-        "ok": "Lo mirás a los ojos con total convicción. El tipo duda, te estudia, y cede: 'bueno, por ser vos'. Precio justo. (+10 Respeto)",
-        "fail": "Te mira con una sonrisa: 'Andá entonces'. Sabés que estás inventando y él también lo sabe. Terminás pagando el precio original. (-20 Vida)"
+        "ok": "Lo mirás a los ojos con total convicción. El tipo duda, te estudia, y cede: 'bueno, por ser vos'. Precio justo. [balanza]Te regala una balanza de bolsillo. (+10 Respeto)",
+        "fail": "Te mira con una sonrisa: 'Andá entonces'. Sabés que estás inventando y él también lo sabe. Terminás pagando el precio original. (-5 Vida)"
       },
       {
         "texto": "Elogiarle el producto para ablandarlo",
         "stat": "Chamullo",
         "diff": 15,
         "ok": "Le decís que el olor solo ya vale la mitad del precio, que eso es artesanal, que él es un artista. El tipo se ríe y te hace un descuentito de amigos. (+5 Respeto)",
-        "fail": "Te escucha, asiente, y te dice: 'Si es tan bueno entonces vale lo que vale'. Checkmate. Pagás full. (-20 Vida)"
+        "fail": "Te escucha, asiente, y te dice: 'Si es tan bueno entonces vale lo que vale'. Checkmate. Pagás full. (-5 Vida)"
       },
       {
         "texto": "Decirle que sos del barrio y que la familia no se cobra así",
         "stat": "Chamullo",
         "diff": 17,
         "ok": "Con la cara más seria del mundo le explicás que sos vecino de toda la vida. El tipo te mira, te reconoce algo, y dobla el precio. Sos un genio. (+15 Respeto)",
-        "fail": "Te pregunta de qué cuadra. Te trabás. Se acabó la actuación. (-20 Vida)"
+        "fail": "Te pregunta de qué cuadra. Te trabás. Se acabó la actuación. (-10 Vida)"
       }
     ]
   }
