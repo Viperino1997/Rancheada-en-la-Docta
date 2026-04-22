@@ -25,7 +25,7 @@ def aplicar_estilos(fase):
         st.markdown("""
             <style>
             .stApp {
-                background-image: url("https://github.com/Viperino1997/Rancheada-en-Cba/blob/main/C_map.png?raw=true");
+                background-image: url("https://github.com/Viperino1997/Rancheada-en-la-Docta/blob/main/C_map.png?raw=true");
                 background-size: cover;
                 background-position: center;
                 background-repeat: no-repeat;
@@ -144,7 +144,7 @@ def mostrar_inicio():
     else:
         audio_codigo = """
             <audio id="musica" loop autoplay>
-                <source src="https://raw.githubusercontent.com/Viperino1997/Rancheada-en-Cba/main/intro.mp3" type="audio/mpeg">
+                <source src="https://raw.githubusercontent.com/Viperino1997/Rancheada-en-la-Docta/main/intro.mp3" type="audio/mpeg">
             </audio>
             <script>document.getElementById("musica").play();</script>
         """
